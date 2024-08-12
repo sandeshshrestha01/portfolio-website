@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domain Registration Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Domain Registration Form</h1>
+<form id="domainForm">
+  <div class="form-group">
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" name="fullName" aria-label="Full Name" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" aria-label="Email" required>
+  </div>
+  <div class="form-group">
+    <label for="phoneNumber">Phone Number</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" aria-label="Phone Number" required>
+  </div>
+  <div class="form-group">
+    <label for="domainName">Domain Name</label>
+    <input type="text" id="domainName" name="domainName" aria-label="Domain Name" required>
+  </div>
+  <div class="form-group">
+    <label for="domainList">Domain Name Extension</label>
+    <select id="domainList" name="domainList" aria-label="Domain Name Extension" required>
+      <option value="com.np">com.np</option>
+      <option value="info.np">info.np</option>
+      <option value="name.np">name.np</option>
+      <option value="pro.np">pro.np</option>
+      <option value="biz.np">biz.np</option>
+    </select>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+<div id="coverLetter"></div>
+<button id="downloadButton">Download as JPEG</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
