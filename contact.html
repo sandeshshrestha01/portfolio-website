@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form method="POST" id="form">
+            <h3>Contact me </h3>
+         
+                <input type="hidden" name="access_key" value="3a5101a2-bdaf-42de-8332-ef6448a2deb4">    
+                <input type="text" name="name" placeholder="Your Name " required>
+                <input type="email" name="email" placeholder="Email Id" required> 
+                <input type="text" name="phone no" placeholder="Phone no" required> 
+                <textarea  name="massage" placeholder="How can I help you?"></textarea>
+                <button type="submit">Send</button>
+                <div id="result"></div>
+            </form>
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="main.js"></script>
+</html>
